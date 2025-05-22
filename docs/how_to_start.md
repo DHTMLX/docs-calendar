@@ -52,7 +52,7 @@ If you want to use trial version of Event Calendar, download the [**trial Event 
 #### Installing PRO Event Calendar via npm and yarn
 
 :::info
-If you have already own Event Calendar under the proprietary license, send your **license number** on the *contact@dhtmlx.com* email to receive *login* and *password* for private **npm** as well as detailed guide on how to install Event Calendar. Note that private **npm** is available before the expiration of the proprietary Event Calendar license.
+You can access the DHTMLX private **npm** directly in the [Client's Area](https://dhtmlx.com/clients/) by generating your login and password for **npm**. A detailed installation guide is also available there. Please note that access to the private **npm** is available only while your proprietary Event Calendar license is active.
 :::
 
 ## Step 2. Creating Event Calendar
