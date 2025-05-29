@@ -53,7 +53,7 @@ Now you should get the DHTMLX Event Calendar source code. First of all, stop the
 
 ### Step 1. Package installation
 
-Download the [**trial Event Calendar package**](/how_to_start/#installing-trial-event-calendar-via-npm-and-yarn) and follow steps mentioned in the README file. Note that trial Event Calendar is available 30 days only.
+Download the [**trial Event Calendar package**](/how_to_start/#installing-trial-event-calendar-via-npm-or-yarn) and follow steps mentioned in the README file. Note that trial Event Calendar is available 30 days only.
   
 ### Step 2. Component creation
 
