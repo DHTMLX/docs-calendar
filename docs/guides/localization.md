@@ -354,6 +354,79 @@ const ru = {
 ~~~
 </details>
 
+<details>
+<summary><b>cn</b> locale</summary>
+
+~~~jsx
+const cn = {
+    dateFnsLocale: dateFnsLocaleCn,
+
+    scheduler: {
+        "New Event": "新建事件",
+        "Add description": "添加描述",
+        "Create event": "创建事件",
+        "Edit event": "编辑事件",
+        "Delete event": "删除事件",
+        "Event name": "事件名称",
+        "Start date": "开始日期",
+        "End date": "结束日期",
+        "All day": "全天",
+        "No events": "无事件",
+        Type: "类型",
+        Description: "描述",
+        Today: "今天",
+        Day: "日",
+        Week: "周",
+        Month: "月",
+        Timeline: "时间线",
+        Agenda: "议程",
+        Calendars: "日历",
+        hourFormat: "H",
+        minuteFormat: "mm",
+        meridianFormat: " a",
+        monthFormat: "EEE",
+        dateFormat: "EEE, d",
+        agendaDateFormat: "MMMM d EEEE",
+        unassignFormat: "d MMM yyyy",
+        Color: "颜色",
+        Delete: "删除",
+        Edit: "编辑",
+        Calendar: "日历",
+        New: "新建",
+        Name: "名称",
+        Save: "保存",
+        Add: "添加",
+        Event: "事件",
+        confirmDelete: "确定要删除 {item} 吗？",
+        confirmUnsaved: "您有未保存的更改！确定要放弃吗？",
+        "Repeat event": "重复事件",
+        viewAll: "+{count} 更多",
+        Never: "永不",
+        Every: "每",
+        Workdays: "工作日",
+        Year: "年",
+        Custom: "自定义",
+        Ends: "结束于",
+        After: "之后",
+        "On date": "在日期",
+        events: "事件",
+        "recurring event": "重复事件",
+        all: "所有事件",
+        future: "当前及后续事件",
+        only: "仅此事件",
+        recurringActionError: "开始日期不能晚于重复结束日期",
+        Assignees: "分配对象",
+        "Recurring events": "重复事件",
+        "Single events": "单一事件",
+        recurringEveryMonthDay: "每月 {date} 日",
+        recurringEveryMonthPos: "每月的第 {pos} 个 {weekDay}",
+        recurringEveryYearDay: "每年 {month} {date} 日",
+        recurringEveryYearPos: "每年 {month} 的第 {pos} 个 {weekDay}"
+    }
+};
+~~~
+</details>
+
 ## Custom locale
 
 To apply a custom locale you need to:
