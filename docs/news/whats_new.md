@@ -26,6 +26,7 @@ Released on June 3, 2025
 - Recurring event no longer follows the cursor properly when dragged after canceling the edit prompt
 - Events from 23:00 to 00:00 are displayed as multi-day
 - Repeat dates for weekly events are miscalculated in locales outside the US
+- New event created by drag and drop disappears after the Editor opens in the Timeline view
 
 ## Version 2.3.0
 
