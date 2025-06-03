@@ -8,6 +8,26 @@ description: You can explore what's new in DHTMLX Event Calendar and its release
 
 If you are updating Event Calendar from an older version, check [Migration to newer versions](news/migration.md) for details.
 
+## Version 2.3.1
+
+Released on June 3, 2025
+
+### New functionality
+
+- Add the [Chineese locale](../../guides/localization)
+
+### Fixes
+
+- Sidebar date-navigator rolls over to the following month when the currently selected day does not exist in the target month
+- Incorrect work of `RemoveEvents` when processing remote update of newly created recurring series
+- The `originalStartTime` should be able to accept a value in date string format for loading data
+- If `RRULE.UNTIL` and `DTEND` are before the `start_date`, a recurring event causes a crash
+- The `placeholder` parameter does not work for the `text` field
+- Recurring event no longer follows the cursor properly when dragged after canceling the edit prompt
+- Events from 23:00 to 00:00 are displayed as multi-day
+- Repeat dates for weekly events are miscalculated in locales outside the US
+- New event created by drag and drop disappears after the Editor opens in the Timeline view
+
 ## Version 2.3.0
 
 Released on December 11, 2024
