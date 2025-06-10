@@ -8,6 +8,17 @@ description: You can explore what's new in DHTMLX Event Calendar and its release
 
 If you are updating Event Calendar from an older version, check [Migration to newer versions](news/migration.md) for details.
 
+## Version 2.3.2
+
+Released on June 9, 2025
+
+### Fixes
+
+- The `UNTIL` property of `RRULE` must use the RFC 5545 short date format
+- Incorrect detection of overlapping events that created using the mouse
+- Unexpected behavior when discarding an event creation
+- Default calendar option is not selected when creating an event via the **Create event** button
+
 ## Version 2.3.1
 
 Released on June 3, 2025
