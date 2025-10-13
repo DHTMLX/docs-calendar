@@ -137,12 +137,17 @@ const config = {
 	url: 'https://docs.dhtmlx.com',
 	baseUrl: '/eventcalendar/',
 	onBrokenLinks: 'warn',
-	onBrokenMarkdownLinks: 'warn',
+	//onBrokenMarkdownLinks: 'warn', // deprecated in v3.9.1
 	onBrokenAnchors: 'warn',
 	favicon: 'img/favicon.ico',
 	organizationName: 'DHTMLX', // Usually your GitHub org/user name.
 	projectName: 'docs-calendar', // Usually your repo name.
 	trailingSlash: true,
+	markdown: {
+		hooks: {
+			onBrokenMarkdownLinks: 'warn',
+		}
+	},
 	presets: [
 		[
 			'@docusaurus/preset-classic',
