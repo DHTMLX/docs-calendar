@@ -8,6 +8,16 @@ description: You can explore what's new in DHTMLX Event Calendar and its release
 
 If you are updating Event Calendar from an older version, check [Migration to newer versions](news/migration.md) for details.
 
+## Version 2.3.3
+
+Released on January 15, 2026
+
+### Fixes
+
+- Recurring events cannot be dragged after part of the series is deleted
+- Past recurring events disappear after dragging an event and selecting the **All events** option
+- Events are positioned incorrectly in the Timeline view when using Safari
+
 ## Version 2.3.2
 
 Released on June 9, 2025
