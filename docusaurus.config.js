@@ -206,6 +206,14 @@ const config = {
   	themeConfig:
     /* @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+		image: 'img/og-default-eventcalendar.png',
+		metadata: [
+			{ property: 'og:type', content: 'website' },
+			{ property: 'og:site_name', content: 'DHTMLX Event Calendar Docs' },
+			{ property: 'og:locale', content: 'en_US' },
+			{ name: 'twitter:card', content: 'summary_large_image' },
+			{ name: 'twitter:site', content: '@dhtmlx' }
+		],
 		navbar: {
 			title: 'JavaScript Event Calendar Documentation',
 			logo: {
