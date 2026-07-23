@@ -5,7 +5,6 @@ import { useBaseUrlUtils } from '@docusaurus/useBaseUrl';
 
 const SITE_NAME = 'DHTMLX Event Calendar Docs';
 const PRODUCT_NAME = 'DHTMLX Event Calendar';
-const PRODUCT_URL = 'https://dhtmlx.com/docs/products/dhtmlxEventCalendar/';
 
 function resolveType(pathname) {
     const path = (pathname || '').replace(/\/+$/, '');
@@ -39,12 +38,9 @@ function buildJsonLd({ type, title, description, url, image, siteUrl }) {
             url,
             image,
             applicationCategory: 'DeveloperApplication',
-            operatingSystem: 'Cross-platform',
-            offers: {
-                '@type': 'Offer',
-                url: PRODUCT_URL,
-                priceCurrency: 'USD'
-            }
+            operatingSystem: 'Cross-platform'
+            // MKS-3075: no `offers` — the product is no longer sold to new customers,
+            // so it must not emit "for sale" markup.
         };
     }
 

@@ -1,7 +1,7 @@
 ---
 sidebar_label: What's new
 title: What's new
-description: You can explore what's new in DHTMLX Event Calendar and its release history in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Event Calendar.
+description: You can explore what's new in DHTMLX Event Calendar and its release history in the documentation of the DHTMLX JavaScript UI library. Browse developer guides, API reference, code examples, and integration tutorials for customers with an existing DHTMLX Event Calendar license.
 ---
 
 # What's new
@@ -55,7 +55,7 @@ Released on December 11, 2024
 
 ### New functionality
 
-- An ability to create [custom views](guides/views.md/#custom-views) based on [built-in views](guides/views.md/#built-in-views)
+- An ability to create [custom views](guides/views.md#custom-views) based on [built-in views](guides/views.md#built-in-views)
 
 ### Updates
 
@@ -174,7 +174,7 @@ Released on February 28, 2024
 
 ### Fixes
 
-- Broken trial build on npm server
+- Broken build on npm server
 
 ## Version 2.1.9
 
@@ -183,7 +183,7 @@ Released on February 28, 2024
 ### Fixes
 
 - All day events are displayed incorrectly in the `Timeline` mode
-- Broken trial build on npm server
+- Broken build on npm server
 - Browser is crashed after double-clicking on the date in the `Year` view
 - Creating a recurring event causes a script error
 - Event changes are not tracked when using the Multiselect control in the editor
@@ -394,7 +394,7 @@ Released on February 14, 2023
 
     - The [`config`](../../api/config/js_eventcalendar_config_config) property of Event Calendar is extended by the ***viewControl*** and ***dimPastEvents*** parameters ([Example](https://snippet.dhtmlx.com/qw45r367?tag=event_calendar))
 
-    - The [`config.view`](../../api/config/js_eventcalendar_config_config) property of Event Calendar is fully updated. See the [Migration to newer versions](news/migration.md/#11---20) for details. ([Example](https://snippet.dhtmlx.com/dmoijc47?tag=event_calendar))
+    - The [`config.view`](../../api/config/js_eventcalendar_config_config) property of Event Calendar is fully updated. See the [Migration to newer versions](news/migration.md#11---20) for details. ([Example](https://snippet.dhtmlx.com/dmoijc47?tag=event_calendar))
 
 ## Version 1.1
 

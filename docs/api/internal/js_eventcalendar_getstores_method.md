@@ -1,7 +1,7 @@
 ---
 sidebar_label: api.getStores()
 title: getStores Method
-description: You can learn about the getStores method in the documentation of the DHTMLX JavaScript Event Calendar library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Event Calendar.
+description: You can learn about the getStores method in the documentation of the DHTMLX JavaScript Event Calendar library. Browse developer guides, API reference, code examples, and integration tutorials for customers with an existing DHTMLX Event Calendar license.
 ---
 
 # api.getStores()

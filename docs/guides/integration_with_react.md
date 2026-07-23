@@ -1,7 +1,7 @@
 ---
 sidebar_label: Integration with React
 title: Integration with React
-description: You can learn about the integration with React in the documentation of the DHTMLX JavaScript Event Calendar library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Event Calendar.
+description: You can learn about the integration with React in the documentation of the DHTMLX JavaScript Event Calendar library. Browse developer guides, API reference, code examples, and integration tutorials for customers with an existing DHTMLX Event Calendar license.
 ---
 
 # Integration with React
@@ -56,7 +56,7 @@ Now you should get the DHTMLX Event Calendar source code. First of all, stop the
 
 ### Step 1. Package installation
 
-Download the [**trial Event Calendar package**](/how_to_start/#installing-trial-event-calendar-via-npm-or-yarn) and follow steps mentioned in the README file. Note that trial Event Calendar is available 30 days only.
+Existing customers can download the licensed Event Calendar package from the [Client's Area](https://dhtmlx.com/clients/). Follow the installation instructions provided with the package.
 
 ### Step 2. Component creation
 
@@ -64,9 +64,7 @@ Now you need to create a React component, to add an Event Calendar into the appl
 
 #### Import source files
 
-Open the ***EventCalendar.jsx*** file and import Event Calendar source files. Note that:
-
-- if you use PRO version and install the Event Calendar package from a local folder, the import paths look like this:
+Open the ***EventCalendar.jsx*** file and import Event Calendar source files. If you install the Event Calendar package from a local folder, the import paths look like this:
 
 ~~~jsx title="EventCalendar.jsx"
 import { EventCalendar } from 'dhx-eventcalendar-package';
@@ -75,23 +73,14 @@ import 'dhx-eventcalendar-package/dist/event-calendar.css';
 
 Note that depending on the used package, the source files can be minified. In this case make sure that you are importing the CSS file as ***event-calendar.min.css***.
 
-- if you use the trial version of Event Calendar, specify the following paths:
-
-~~~jsx title="EventCalendar.jsx"
-import { EventCalendar } from '@dhx/trial-eventcalendar';
-import "@dhx/trial-eventcalendar/dist/event-calendar.css";
-~~~
-
-In this tutorial you can see how to configure the **trial** version of Event Calendar.
-
 #### Setting the container and adding Event Calendar
 
 To display Event Calendar on the page, you need to create the container for Event Calendar, and initialize this component using the corresponding constructor:
 
 ~~~jsx {2,6,9-10} title="EventCalendar.jsx"
 import { useEffect, useRef } from "react";
-import { EventCalendar } from "@dhx/trial-eventcalendar";
-import "@dhx/trial-eventcalendar/dist/event-calendar.css"; // include Event Calendar styles
+import { EventCalendar } from "dhx-eventcalendar-package";
+import "dhx-eventcalendar-package/dist/event-calendar.css"; // include Event Calendar styles
 
 export default function EventCalendarComponent(props) {
     let container = useRef(); // initialize container for Event Calendar
@@ -182,8 +171,8 @@ Go to the ***EventCalendar.jsx*** file and apply the passed **props** to the Eve
 
 ~~~jsx {5,10-11} title="EventCalendar.jsx"
 import { useEffect, useRef } from "react";
-import { EventCalendar } from "@dhx/trial-eventcalendar";
-import "@dhx/trial-eventcalendar/dist/event-calendar.css";
+import { EventCalendar } from "dhx-eventcalendar-package";
+import "dhx-eventcalendar-package/dist/event-calendar.css";
 
 export default function EventCalendarComponent(props) {
     let container = useRef(); 
@@ -208,8 +197,8 @@ You can also use the [`parse()`](/api/methods/js_eventcalendar_parse_method/) me
 
 ~~~jsx {8-9,14} title="EventCalendar.jsx"
 import { useEffect, useRef } from "react";
-import { EventCalendar } from "@dhx/trial-eventcalendar";
-import "@dhx/trial-eventcalendar/dist/event-calendar.css";
+import { EventCalendar } from "dhx-eventcalendar-package";
+import "dhx-eventcalendar-package/dist/event-calendar.css";
 
 export default function EventCalendarComponent(props) {
     let container = useRef(); 
@@ -259,6 +248,6 @@ useEffect(() => {
 
 After that, you can start the app to see Event Calendar loaded with data on a page.
 
-![Event Calendar initialization](../assets/trial_eventcalendar.png)
+![Event Calendar initialization](../assets/eventcalendar_initialization.png)
 
 Now you know how to integrate DHTMLX Event Calendar with React. You can customize the code according to your specific requirements. The final example you can find on [**GitHub**](https://github.com/DHTMLX/react-event-calendar-demo).
