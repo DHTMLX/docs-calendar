@@ -1,7 +1,7 @@
 ---
 sidebar_label: Integration with Vue
 title: Integration with Vue
-description: You can learn about the integration with Vue in the documentation of the DHTMLX JavaScript Event Calendar library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Event Calendar.
+description: You can learn about the integration with Vue in the documentation of the DHTMLX JavaScript Event Calendar library. Browse developer guides, API reference, code examples, and integration tutorials for customers with an existing DHTMLX Event Calendar license.
 ---
 
 # Integration with Vue
@@ -60,7 +60,7 @@ Now you should get the DHTMLX Event Calendar source code. First of all, stop the
 
 ### Step 1. Package installation
 
-Download the [**trial Event Calendar package**](/how_to_start/#installing-trial-event-calendar-via-npm-or-yarn) and follow steps mentioned in the README file. Note that trial Event Calendar is available 30 days only.
+Existing customers can download the licensed Event Calendar package from the [Client's Area](https://dhtmlx.com/clients/). Follow the installation instructions provided with the package.
 
 ### Step 2. Component creation
 
@@ -68,9 +68,7 @@ Now you need to create a Vue component, to add Event Calendar into the applicati
 
 #### Import source files
 
-Open the ***EventCalendar.vue*** file and import Event Calendar source files. Note that:
-
-- if you use PRO version and install the Event Calendar package from a local folder, the import paths look like this:
+Open the ***EventCalendar.vue*** file and import Event Calendar source files. If you install the Event Calendar package from a local folder, the import paths look like this:
 
 ~~~html title="EventCalendar.vue"
 <script>
@@ -81,25 +79,14 @@ import 'dhx-eventcalendar-package/dist/event-calendar.css';
 
 Note that depending on the used package, the source files can be minified. In this case make sure that you are importing the CSS file as ***event-calendar.min.css***.
 
-- if you use the trial version of Event Calendar, specify the following paths:
-
-~~~html title="EventCalendar.vue"
-<script>
-import { EventCalendar } from '@dhx/trial-eventcalendar';
-import '@dhx/trial-eventcalendar/dist/event-calendar.css';
-<script>
-~~~
-
-In this tutorial you can see how to configure the **trial** version of Event Calendar.
-
 #### Setting the container and adding Event Calendar
 
 To display Event Calendar on the page, you need to create the container for Event Calendar, and initialize this component using the corresponding constructor:
 
 ~~~html {2,7-8,18} title="EventCalendar.vue"
 <script>
-import { EventCalendar } from "@dhx/trial-eventcalendar";
-import "@dhx/trial-eventcalendar/dist/event-calendar.css";
+import { EventCalendar } from "dhx-eventcalendar-package";
+import "dhx-eventcalendar-package/dist/event-calendar.css";
 
 export default {
     mounted() {
@@ -202,8 +189,8 @@ Go to the ***EventCalendar.vue*** file and apply the passed **props** to the Eve
 
 ~~~html {6,10-11} title="EventCalendar.vue"
 <script>
-import { EventCalendar } from "@dhx/trial-eventcalendar";
-import "@dhx/trial-eventcalendar/dist/event-calendar.css";
+import { EventCalendar } from "dhx-eventcalendar-package";
+import "dhx-eventcalendar-package/dist/event-calendar.css";
 
 export default {
     props: ["events", "date"],
@@ -231,8 +218,8 @@ You can also use the [`parse()`](/api/methods/js_eventcalendar_parse_method/) me
 
 ~~~html {11-14} title="EventCalendar.vue"
 <script>
-import { EventCalendar } from "@dhx/trial-eventcalendar";
-import "@dhx/trial-eventcalendar/dist/event-calendar.css";
+import { EventCalendar } from "dhx-eventcalendar-package";
+import "dhx-eventcalendar-package/dist/event-calendar.css";
 
 export default {
     props: ["events", "date"],
@@ -288,6 +275,6 @@ export default {
 
 After that, you can start the app to see Event Calendar loaded with data on a page.
 
-![Event Calendar initialization](../assets/trial_eventcalendar.png)
+![Event Calendar initialization](../assets/eventcalendar_initialization.png)
 
 Now you know how to integrate DHTMLX Event Calendar with Vue. You can customize the code according to your specific requirements. The final example you can find on [**GitHub**](https://github.com/DHTMLX/vue-event-calendar-demo).

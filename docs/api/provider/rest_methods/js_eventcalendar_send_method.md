@@ -1,7 +1,7 @@
 ---
 sidebar_label: send()
 title: send Method
-description: You can learn about the send method of the RestDataProvider in the documentation of the DHTMLX JavaScript Event Calendar library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Event Calendar.
+description: You can learn about the send method of the RestDataProvider in the documentation of the DHTMLX JavaScript Event Calendar library. Browse developer guides, API reference, code examples, and integration tutorials for customers with an existing DHTMLX Event Calendar license.
 ---
 
 # send()
@@ -10,7 +10,7 @@ description: You can learn about the send method of the RestDataProvider in the 
 
 @short: Sends a necessary HTTP request to the server and returns a promise with or without data depending on the request 
 
-All requests to the server are made with the **send()** method which is a part of the [**RestDataProvider**](guides/working_with_server.md/#restdataprovider) service.
+All requests to the server are made with the **send()** method which is a part of the [**RestDataProvider**](guides/working_with_server.md#restdataprovider) service.
 
 ### Usage
 
