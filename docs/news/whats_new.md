@@ -146,8 +146,6 @@ Released on May 7, 2024
 
 Released on April 25, 2024
 
-[Review of release on the blog](https://dhtmlx.com/blog/dhtmlx-event-calendar-2-2/)
-
 ### Updates
 
 - #### Properties
