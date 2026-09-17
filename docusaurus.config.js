@@ -161,11 +161,10 @@ const config = {
 				theme: {
 					customCss: require.resolve('./src/css/custom.css'),
 				},
-				sitemap: {
-					changefreq: 'daily',
-					priority: 0.5,
-					// trailingSlash: true
-				},
+				// MKS-3075: the docs are noindex and must not be advertised via a sitemap.
+				// The robots metadata below already makes plugin-sitemap skip every route,
+				// this disables the plugin outright.
+				sitemap: false,
 			}),
 		],
   	],
@@ -198,7 +197,11 @@ const config = {
 				highlightSearchTermsOnTargetPage: true,
 				removeDefaultStemmer: true,
 				removeDefaultStopWordFilter: true,
-				explicitSearchResultPath: true
+				explicitSearchResultPath: true,
+				// MKS-3075: every page is noindex now, and the plugin drops noindex pages
+				// from the index by default. Existing customers still rely on on-site
+				// search, so keep indexing them.
+				forceIgnoreNoIndex: true
 			}
 		]
 	],
@@ -212,7 +215,11 @@ const config = {
 			{ property: 'og:site_name', content: 'DHTMLX Event Calendar Docs' },
 			{ property: 'og:locale', content: 'en_US' },
 			{ name: 'twitter:card', content: 'summary_large_image' },
-			{ name: 'twitter:site', content: '@dhtmlx' }
+			{ name: 'twitter:site', content: '@dhtmlx' },
+			// MKS-3075: the docs stay reachable by direct link only.
+			// Set here rather than via the top-level `noIndex` option, which is
+			// hard-coded to emit "noindex, nofollow" and would drop link equity.
+			{ name: 'robots', content: 'noindex, follow' }
 		],
 		navbar: {
 			title: 'JavaScript Event Calendar Documentation',
@@ -238,8 +245,8 @@ const config = {
 					"position": "right"
 				},
 				{
-					"label": "Download",
-					"href": "https://dhtmlx.com/docs/products/dhtmlxEventCalendar/download.shtml",
+					"label": "Client's Area",
+					"href": "https://dhtmlx.com/clients/",
 					"position": "right"
 				}
 			]
@@ -251,8 +258,8 @@ const config = {
 					"title": "Development center",
 					"items": [
 						{
-							"label": "Download Event Calendar",
-							"href": "https://dhtmlx.com/docs/products/dhtmlxEventCalendar/download.shtml",
+							"label": "Client's Area",
+							"href": "https://dhtmlx.com/clients/",
 							"position": "right"
 						},
 						{

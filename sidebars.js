@@ -17,7 +17,7 @@ module.exports = {
                 type: 'generated-index',
                 title: "What's new and migration",
                 keywords: ['news'],
-                image: '/img/docusaurus.png'
+                image: '/img/og-default-eventcalendar.png'
             },
             items: [
                 "news/whats_new",
@@ -80,7 +80,7 @@ module.exports = {
                         type: 'generated-index',
                         title: 'Internal API overview',
                         keywords: ['internal api'],
-                        image: '/img/docusaurus.png'
+                        image: '/img/og-default-eventcalendar.png'
                     },
                     items: [
                         {
@@ -176,7 +176,7 @@ module.exports = {
                         type: 'generated-index',
                         title: "Backend API",
                         keywords: ['rest api'],
-                        image: '/img/docusaurus.png'
+                        image: '/img/og-default-eventcalendar.png'
                     },
                     items: [
                         // RestDataProvider api
@@ -189,7 +189,7 @@ module.exports = {
                                 type: 'generated-index',
                                 title: "RestDataProvider API",
                                 keywords: ['rest api'],
-                                image: '/img/docusaurus.png'
+                                image: '/img/og-default-eventcalendar.png'
                             },
                             items: [
                                 // REST methods
@@ -227,7 +227,7 @@ module.exports = {
                                         type: 'generated-index',
                                         title: "GET routes",
                                         keywords: ['routes'],
-                                        image: '/img/docusaurus.png'
+                                        image: '/img/og-default-eventcalendar.png'
                                     },
                                     items: [
                                         "api/provider/rest_routes/get_routes/js_eventcalendar_getevents_route",
@@ -243,7 +243,7 @@ module.exports = {
                                         type: 'generated-index',
                                         title: "POST routes",
                                         keywords: ['routes'],
-                                        image: '/img/docusaurus.png'
+                                        image: '/img/og-default-eventcalendar.png'
                                     },
                                     items: [
                                         "api/provider/rest_routes/post_routes/js_eventcalendar_postevent_route",
@@ -259,7 +259,7 @@ module.exports = {
                                         type: 'generated-index',
                                         title: "PUT routes",
                                         keywords: ['routes'],
-                                        image: '/img/docusaurus.png'
+                                        image: '/img/og-default-eventcalendar.png'
                                     },
                                     items: [
                                         "api/provider/rest_routes/put_routes/js_eventcalendar_putevent_route",
@@ -274,7 +274,7 @@ module.exports = {
                                         type: 'generated-index',
                                         title: "DELETE routes",
                                         keywords: ['routes'],
-                                        image: '/img/docusaurus.png'
+                                        image: '/img/og-default-eventcalendar.png'
                                     },
                                     items: [
                                         "api/provider/rest_routes/delete_routes/js_eventcalendar_deleteevent_route",
@@ -295,7 +295,7 @@ module.exports = {
                 type: 'generated-index',
                 title: "Backend and frameworks integration",
                 keywords: ['backend and frameworks integration'],
-                image: '/img/docusaurus.png'
+                image: '/img/og-default-eventcalendar.png'
             },
             items: [
                 "guides/working_with_server",
@@ -315,7 +315,7 @@ module.exports = {
                 type: 'generated-index',
                 title: 'Guides',
                 keywords: ['guides'],
-                image: '/img/docusaurus.png',
+                image: '/img/og-default-eventcalendar.png',
             },
             items: [
                 "guides/initialization",

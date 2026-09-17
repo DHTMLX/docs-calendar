@@ -1,7 +1,7 @@
 ---
 sidebar_label: Event Bus methods overview
 title: Event Bus Methods Overview
-description: You can explore an Event Bus methods overview in the documentation of the DHTMLX JavaScript Event Calendar library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Event Calendar.
+description: You can explore an Event Bus methods overview in the documentation of the DHTMLX JavaScript Event Calendar library. Browse developer guides, API reference, code examples, and integration tutorials for customers with an existing DHTMLX Event Calendar license.
 ---
 
 # Event Bus methods overview

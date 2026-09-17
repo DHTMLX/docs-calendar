@@ -247,3 +247,46 @@ p {
   line-height: 2;
 }
 
+/* MKS-3075 discontinuation notice: sticky-offset compensation.
+ *
+ * The notice is pinned below the navbar, so everything Docusaurus offsets from
+ * `--ifm-navbar-height` alone would scroll underneath it. `--ec-notice-height`
+ * is published by the ProductNotice component from its measured height; the
+ * fallback keeps the layout sane before hydration and if JS is disabled. */
+
+:root {
+  /* ~two lines of 0.9rem/1.5 text plus 0.7rem padding; the component replaces
+   * this with the measured value as soon as it mounts */
+  --ec-notice-height: 4.25rem;
+}
+
+@media (max-width: 996px) {
+  :root {
+    --ec-notice-height: 5rem;
+  }
+}
+
+/* anchor navigation — adds to the theme's existing scroll-margin-top */
+html {
+  scroll-padding-top: var(--ec-notice-height);
+}
+
+@media (min-width: 997px) {
+  /* doc sidebar viewport (sticky at top: 0) */
+  .theme-doc-sidebar-container > div {
+    top: var(--ec-notice-height);
+    max-height: calc(100vh - var(--ec-notice-height));
+  }
+
+  /* desktop table of contents — `.col >` only to outweigh the theme's own
+   * single-class rule, which is emitted later in the bundle */
+  .col > .theme-doc-toc-desktop {
+    top: calc(var(--ifm-navbar-height) + var(--ec-notice-height) + 1rem);
+    max-height: calc(
+      100vh - var(--ifm-navbar-height) - var(--ec-notice-height) - 2rem
+    );
+  }
+}
+
+/* end MKS-3075 notice offsets */
+

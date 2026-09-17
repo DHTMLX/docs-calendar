@@ -1,6 +1,9 @@
 <h1 align="center"><a href="https://docs.dhtmlx.com/eventcalendar/">DHTMLX Event Calendar Documentation</a></h1>
 
-New Event Calendar description here
+> **DHTMLX Event Calendar is no longer available to new customers.**
+> This documentation is maintained for customers with an existing Event Calendar
+> license. For new projects, please consider
+> [DHTMLX Scheduler](https://docs.dhtmlx.com/scheduler/).
 
 ## Explore documentation locally
 
@@ -27,7 +30,7 @@ $ yarn start
 
 ## Related sources
 
-[Download DHTMLX Event Calendar](https://dhtmlx.com/docs/products/dhtmlxEventCalendar/download.shtml)
+[Client's Area](https://dhtmlx.com/clients/) — existing customers can download their licensed Event Calendar package here
 
 [Live demos](https://snippet.dhtmlx.com/qw45r367?tag=event_calendar)
 

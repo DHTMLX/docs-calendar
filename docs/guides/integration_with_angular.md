@@ -1,7 +1,7 @@
 ---
 sidebar_label: Integration with Angular
 title: Integration with Angular
-description: You can learn about the integration with Angular in the documentation of the DHTMLX JavaScript Event Calendar library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Event Calendar.
+description: You can learn about the integration with Angular in the documentation of the DHTMLX JavaScript Event Calendar library. Browse developer guides, API reference, code examples, and integration tutorials for customers with an existing DHTMLX Event Calendar license.
 ---
 
 # Integration with Angular
@@ -53,36 +53,26 @@ Now you should get the DHTMLX Event Calendar source code. First of all, stop the
 
 ### Step 1. Package installation
 
-Download the [**trial Event Calendar package**](/how_to_start/#installing-trial-event-calendar-via-npm-or-yarn) and follow steps mentioned in the README file. Note that trial Event Calendar is available 30 days only.
-  
+Existing customers can download the licensed Event Calendar package from the [Client's Area](https://dhtmlx.com/clients/). Follow the installation instructions provided with the package.
+
 ### Step 2. Component creation
 
 Now you need to create an Angular component, to add Event Calendar into the application. Create  the ***event-calendar*** folder in the ***src/app/*** directory, add a new file into it and name it ***event-calendar.component.ts***. Then complete the steps described below.
 
 #### Import source files
 
-Open the file and import Event Calendar source files. Note that:
-
-- if you use PRO version and install the Event Calendar package from a local folder, the imported path looks like this:
+Open the file and import Event Calendar source files. If you install the Event Calendar package from a local folder, the imported path looks like this:
 
 ~~~jsx
 import { EventCalendar } from 'dhx-eventcalendar-package';
 ~~~
-
-- if you use the trial version of Event Calendar, specify the following path:
-
-~~~jsx
-import { EventCalendar } from '@dhx/trial-eventcalendar';
-~~~
-
-In this tutorial you can see how to configure the **trial** version of Event Calendar.
 
 #### Set the container and initialize Event Calendar
 
 To display Event Calendar on the page, you need to set the container to render the component inside and initialize Event Calendar using the corresponding constructor:
 
 ~~~jsx {1,8,12-13,18-19} title="event-calendar.component.ts"
-import { EventCalendar } from '@dhx/trial-eventcalendar';
+import { EventCalendar } from 'dhx-eventcalendar-package';
 import { Component, ElementRef, OnInit, ViewChild, OnDestroy, ViewEncapsulation } from '@angular/core';
 
 @Component({
@@ -115,7 +105,7 @@ To display Event Calendar correctly, you need to provide the corresponding style
 
 ~~~css title="event-calendar.component.css"
 /* import Event Calendar styles */
-@import "@dhx/trial-eventcalendar/dist/event-calendar.css";
+@import "dhx-eventcalendar-package/dist/event-calendar.css";
 
 /* specify styles for initial page */
 html,
@@ -169,7 +159,7 @@ export function getData() {
 Then open the ***event-calendar.component.ts*** file. Import the file with data and specify the corresponding data properties to the configuration object of Event Calendar within the `ngOnInit()` method, as shown below.
 
 ~~~jsx {2,18,20} title="event-calendar.component.ts"
-import { EventCalendar } from '@dhx/trial-eventcalendar';
+import { EventCalendar } from 'dhx-eventcalendar-package';
 import { getData } from "./data"; // import data
 import { Component, ElementRef, OnInit, ViewChild, OnDestroy, ViewEncapsulation } from '@angular/core';
 
@@ -202,7 +192,7 @@ export class EventCalendarComponent implements OnInit, OnDestroy {
 You can also use the [`parse()`](/api/methods/js_eventcalendar_parse_method/) method inside the `ngOnInit()` method of Angular to load data into Event Calendar.
 
 ~~~jsx {2,18,23-24} title="event-calendar.component.ts"
-import { EventCalendar } from '@dhx/trial-eventcalendar';
+import { EventCalendar } from 'dhx-eventcalendar-package';
 import { getData } from "./data"; // import data
 import { Component, ElementRef, OnInit, ViewChild, OnDestroy, ViewEncapsulation } from '@angular/core';
 
@@ -306,6 +296,6 @@ platformBrowserDynamic()
 
 After that, you can start the app to see Event Calendar loaded with data on a page.
 
-![Event Calendar initialization](../assets/trial_eventcalendar.png)
+![Event Calendar initialization](../assets/eventcalendar_initialization.png)
 
 Now you know how to integrate DHTMLX Event Calendar with Angular. You can customize the code according to your specific requirements. The final example you can find on [**GitHub**](https://github.com/DHTMLX/angular-event-calendar-demo).

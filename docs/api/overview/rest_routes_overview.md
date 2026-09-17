@@ -1,7 +1,7 @@
 ---
 sidebar_label: REST routes overview
 title: REST Routes Overview
-description: You can have the REST routes overview of the DHTMLX JavaScript Event Calendar library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Event Calendar.
+description: You can have the REST routes overview of the DHTMLX JavaScript Event Calendar library. Browse developer guides, API reference, code examples, and integration tutorials for customers with an existing DHTMLX Event Calendar license.
 ---
 
 # REST routes overview

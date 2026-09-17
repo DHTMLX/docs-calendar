@@ -1,7 +1,7 @@
 ---
 sidebar_label: How to start
 title: How to Start
-description: You can explore how to start working with DHTMLX Event Calendar in the documentation of the DHTMLX JavaScript Event Calendar library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Event Calendar.
+description: You can explore how to start working with DHTMLX Event Calendar in the documentation of the DHTMLX JavaScript Event Calendar library. Browse developer guides, API reference, code examples, and integration tutorials for customers with an existing DHTMLX Event Calendar license.
 ---
 
 # How to start
@@ -10,7 +10,7 @@ This clear and comprehensive tutorial will guide your through the steps you need
 
 ## Step 1. Including source files
 
-[Download the package](https://dhtmlx.com/docs/products/dhtmlxEventCalendar/download.shtml) and unpack it into the folder of your project.
+Existing customers can download their licensed Event Calendar package from the [Client's Area](https://dhtmlx.com/clients/) and unpack it into the folder of your project.
 
 Start from creating an HTML file and call it *index.html*. Then proceed to include Event Calendar source files into the created file.
 
@@ -43,13 +43,7 @@ You can import JavaScript Event Calendar into your project using `yarn` or `npm`
 If you want to integrate Event Calendar into React, Angular, Svelte or Vue projects, refer to the corresponding [**integration guides**](/category/backend-and-frameworks-integration/) for more information.
 :::
 
-#### Installing trial Event Calendar via npm or yarn
-
-:::info
-If you want to use trial version of Event Calendar, download the [**trial Event Calendar package**](https://dhtmlx.com/docs/products/dhtmlxEventCalendar/download.shtml) and follow steps mentioned in the *README* file. Note that trial Event Calendar is available 30 days only.
-:::
-
-#### Installing PRO Event Calendar via npm or yarn
+#### Installing Event Calendar via npm or yarn for existing customers
 
 :::info
 You can access the DHTMLX private **npm** directly in the [Client's Area](https://dhtmlx.com/clients/) by generating your login and password for **npm**. A detailed installation guide is also available there. Please note that access to the private **npm** is available only while your proprietary Event Calendar license is active.

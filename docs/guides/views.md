@@ -1,7 +1,7 @@
 ---
 sidebar_label: View Configuration
 title: View Configuration
-description: You can learn about the available Views in the documentation of the DHTMLX JavaScript Event Calendar library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Event Calendar.
+description: You can learn about the available Views in the documentation of the DHTMLX JavaScript Event Calendar library. Browse developer guides, API reference, code examples, and integration tutorials for customers with an existing DHTMLX Event Calendar license.
 ---
 
 # View Configuration
@@ -125,7 +125,7 @@ const calendar = new eventCalendar.EventCalendar("#root", {
 });
 ~~~
 
-For more details about the `config` object, please refer to the [Configuration Guide](guides/configuration.md/#configuring-view-modes).
+For more details about the `config` object, please refer to the [Configuration Guide](guides/configuration.md#configuring-view-modes).
 
 ## Built-in Views
 

@@ -1,0 +1,77 @@
+/*
+ * MKS-3075 discontinuation notice.
+ * Pinned below the navbar and fully opaque — page content scrolls behind it,
+ * never through it. Deliberately styled apart from `:::info` admonitions: the
+ * docs already use ~56 of those, and this must not read as one more inline tip.
+ */
+
+/* Full-width sticky strip. Carries the page background so nothing shows through
+ * the padding around the notice, and the padding is what keeps the notice's top
+ * border clear of the navbar. */
+.bar {
+  position: sticky;
+  top: var(--ifm-navbar-height);
+  /* below the navbar (--ifm-z-index-fixed: 200), above sidebar/TOC/content */
+  z-index: 190;
+
+  /* `.mainWrapper` is a flex column — size to content, never stretch */
+  flex: 0 0 auto;
+
+  background-color: var(--ifm-background-color);
+  padding: 0.6rem var(--ifm-spacing-horizontal);
+}
+
+/* The notice itself: main-container width, centred, all four borders visible. */
+.notice {
+  max-width: var(--ifm-container-width-xl, 1320px);
+  margin: 0 auto;
+
+  /* opaque on purpose: this sits over scrolling content */
+  background-color: #fdf3d8;
+  border: 1px solid #e0a020;
+  border-left-width: 4px;
+  border-radius: var(--ifm-global-radius, 4px);
+  box-shadow: 0 1px 4px rgb(0 0 0 / 12%);
+  color: #453309;
+  padding: 0.6rem 1.1rem;
+}
+
+html[data-theme='dark'] .notice {
+  background-color: #33290f;
+  border-color: #8a6c22;
+  border-left-color: #e0a020;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 40%);
+  color: #f6e8c4;
+}
+
+/* `p { line-height: 2 }` in custom.css would stretch this into a banner */
+.text {
+  line-height: 1.5;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.link {
+  color: inherit;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.link:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (max-width: 996px) {
+  .bar {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .notice {
+    padding: 0.5rem 0.85rem;
+  }
+
+  .text {
+    font-size: 0.85rem;
+  }
+}

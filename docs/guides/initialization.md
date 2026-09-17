@@ -1,7 +1,7 @@
 ---
 sidebar_label: Initialization
 title: Initialization
-description: You can learn about the initialization in the documentation of the DHTMLX JavaScript Event Calendar library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Event Calendar.
+description: You can learn about the initialization in the documentation of the DHTMLX JavaScript Event Calendar library. Browse developer guides, API reference, code examples, and integration tutorials for customers with an existing DHTMLX Event Calendar license.
 ---
 
 # Initialization
@@ -14,7 +14,7 @@ This guide will give you detailed instructions on how to create Event Calendar o
 
 ## Including source files
 
-[Download the package](https://dhtmlx.com/docs/products/dhtmlxEventCalendar/download.shtml) and unpack it into a folder of your project.
+Download your licensed Event Calendar package from the [Client's Area](https://dhtmlx.com/clients/) and unpack it into a folder of your project.
 
 To create Event Calendar, you need to include 2 source files on your page:
 
