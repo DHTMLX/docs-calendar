@@ -362,8 +362,6 @@ Released on February 23, 2023
 
 Released on February 14, 2023
 
-[Review of release on the blog](https://dhtmlx.com/blog/dhtmlx-event-calendar-2-0/)
-
 ### New functionality
 
 - Timeline view
@@ -398,8 +396,6 @@ Released on February 14, 2023
 
 Released on November 10, 2022
 
-[Review of release on the blog](https://dhtmlx.com/blog/meet-dhtmlx-event-calendar-v1-1/)
-
 ### New functionality
 
 - An ability to view events in the Year and Agenda modes ([Example](https://snippet.dhtmlx.com/6nl72051?tag=event_calendar))
@@ -425,8 +421,6 @@ Released on November 10, 2022
 ## Version 1.0
 
 Released on September 1, 2022
-
-[Review of release on the blog](https://dhtmlx.com/blog/meet-dhtmlx-event-calendar-v1-0/)
 
 ### Initial functionality
 
