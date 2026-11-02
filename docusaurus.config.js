@@ -256,6 +256,11 @@ const config = {
 							"position": "right"
 						},
 						{
+							"label": "Product page",
+							"href": "https://dhtmlx.com/docs/products/dhtmlxEventCalendar/",
+							"position": "right"
+						},
+						{
 							"label": "Examples",
 							"href": "https://snippet.dhtmlx.com/qw45r367?tag=event_calendar",
 							"position": "right"
